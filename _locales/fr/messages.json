@@ -1,0 +1,11 @@
+{
+  "extension_name": {
+    "message": "Clean on Click"
+  },
+  "extension_description": {
+    "message": "Contrôle + clic pour effacer n'importe quel champ de texte"
+  },
+  "context_menu_my_other_extensions": {
+    "message": "★★ Mes autres extensions ★★"
+  }
+}

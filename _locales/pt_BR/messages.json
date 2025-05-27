@@ -1,0 +1,11 @@
+{
+  "extension_name": {
+    "message": "Clean on Click"
+  },
+  "extension_description": {
+    "message": "Control + clique para limpar qualquer campo de texto"
+  },
+  "context_menu_my_other_extensions": {
+    "message": "★★ Minhas outras extensões ★★"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extension_name": {
+    "message": "Clean on Click"
+  },
+  "extension_description": {
+    "message": "Control + click to clear any text field"
+  },
+  "context_menu_my_other_extensions": {
+    "message": "★★ My other extensions ★★"
+  }
+}
