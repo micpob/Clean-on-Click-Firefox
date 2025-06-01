@@ -22,4 +22,4 @@ HTML, CSS, Javascript (Extensions APIs)
   
 ### Install here: 
 
-<a href="https://chromewebstore.google.com/detail/clean-on-click/jeooikeedccdbmaglmflljfmefeimloo"><img src="Docs/screenshots/chrome-web-store-logo-large.png" alt="Chrome web store button" width="250px" ></a>
+<a href="https://addons.mozilla.org/en-US/firefox/addon/clean-on-click/"><img src="Docs/screenshots/Firefox_Browser_Add-ons_logo.png" alt="Firefox add ons store button" width="250px" style="border: 1px solid gray; padding: 8px" ></a>
