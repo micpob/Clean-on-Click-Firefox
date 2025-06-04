@@ -22,4 +22,4 @@ HTML, CSS, Javascript (Extensions APIs)
   
 ### Install here: 
 
-<a href="https://addons.mozilla.org/en-US/firefox/addon/clean-on-click/"><kbd><img src="./Docs/screenshots/Firefox-logo.png" alt="Firefox add ons store button" width="250px" ></kbd></a>
+<a href="https://addons.mozilla.org/en-US/firefox/addon/clean-on-click/"><img src="Docs/screenshots/Firefox_Browser_Add-ons_logo.png" alt="Firefox add ons store button" width="250px" ></a>
