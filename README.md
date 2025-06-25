@@ -1,6 +1,6 @@
 # Clean on click
 
-This Chrome extension will **clean any text field** from its content if you click on it while pressing the Ctrl button. 
+This extension will **clean any text field** from its content if you click on it while pressing the Ctrl button. 
 
 <br/>
 <div align="center" >
