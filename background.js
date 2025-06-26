@@ -1,31 +1,31 @@
-chrome.runtime.onStartup.addListener( () => {
-  chrome.storage.local.get('active', (result) => {
+browser.runtime.onStartup.addListener( () => {
+  browser.storage.local.get('active', (result) => {
     if (result.active) {
-      chrome.action.setIcon({path: 'Res/Icons/icon64.png'})
+      browser.action.setIcon({path: 'Res/Icons/icon64.png'})
     } else {
-      chrome.action.setIcon({path: 'Res/Icons/icon64_off.png'})
+      browser.action.setIcon({path: 'Res/Icons/icon64_off.png'})
     } 
   })
 })
 
-chrome.runtime.onInstalled.addListener((details) => {
+browser.runtime.onInstalled.addListener((details) => {
   const reason = details.reason
 
   switch (reason) {
      case 'install':
-        chrome.storage.local.set({
+        browser.storage.local.set({
           'active': true,
         }, () => {
           //setUpContextMenus()
         })
         break;
      case 'update':
-      chrome.storage.local.get('active', (result) => {
+      browser.storage.local.get('active', (result) => {
         let active = typeof result.active == 'boolean' ? result.active : true
-        chrome.storage.local.set({
+        browser.storage.local.set({
           "active": active
         }, () => {
-          /* chrome.contextMenus.removeAll(() => {
+          /* browser.contextMenus.removeAll(() => {
             setUpContextMenus()
           }) */
         })
@@ -36,31 +36,31 @@ chrome.runtime.onInstalled.addListener((details) => {
   }
 })
 
-chrome.action.onClicked.addListener( () => {
-  chrome.storage.local.get('active', (result) => {
+browser.action.onClicked.addListener( () => {
+  browser.storage.local.get('active', (result) => {
     if (result.active) {
-      chrome.storage.local.set({ 'active': false })
-      chrome.action.setIcon({path: 'Res/Icons/icon64_off.png'})
+      browser.storage.local.set({ 'active': false })
+      browser.action.setIcon({path: 'Res/Icons/icon64_off.png'})
     } else {
-      chrome.storage.local.set({ 'active': true })
-      chrome.action.setIcon({path: 'Res/Icons/icon64.png'})
+      browser.storage.local.set({ 'active': true })
+      browser.action.setIcon({path: 'Res/Icons/icon64.png'})
     }
   })  
 })
 
 /* const setUpContextMenus = () => {
-  chrome.contextMenus.removeAll(() => {
+  browser.contextMenus.removeAll(() => {
     const contextMenuMyOtherExtyensions = {
       id: 'myOtherExtensions',
-      title: chrome.i18n.getMessage("context_menu_my_other_extensions"),
+      title: browser.i18n.getMessage("context_menu_my_other_extensions"),
       contexts: ['action']
     }
-    chrome.contextMenus.create(contextMenuMyOtherExtyensions, () => chrome.runtime.lastError)
+    browser.contextMenus.create(contextMenuMyOtherExtyensions, () => browser.runtime.lastError)
   })
 }
 
-chrome.contextMenus.onClicked.addListener((clickData) => {
+browser.contextMenus.onClicked.addListener((clickData) => {
   if (clickData.menuItemId == 'myOtherExtensions') {
-    chrome.tabs.create({ url: 'https://chromewebstore.google.com/search/micpob' })
+    browser.tabs.create({ url: 'https://browserwebstore.google.com/search/micpob' })
   }
 }) */

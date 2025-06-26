@@ -1,5 +1,5 @@
 document.addEventListener('click', (el) => {
-  chrome.storage.local.get(['active'], (result) => {
+  browser.storage.local.get(['active'], (result) => {
     if (result.active) {
       if (isEditableElement(el.target)) {
         if (el.ctrlKey || el.metaKey) {
